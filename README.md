@@ -40,6 +40,23 @@ at their own copy of the files.
 The sets are decompressed on first use and shared afterwards, so treat
 them as read-only.
 
+## shakespeare
+
+The "tiny Shakespeare" corpus: 1.1 MB of dialogue as one stream of text,
+65 distinct bytes, the standard toy corpus for character-level language
+models.
+
+```go
+text, err := shakespeare.Text()
+symbols, index := shakespeare.Vocabulary(text) // 65 symbols, byte -> id
+ids := shakespeare.Encode(text, index)
+```
+
+`Vocabulary` returns the distinct bytes in ascending order and a lookup
+table with -1 for bytes the corpus never uses. A character vocabulary is
+what makes a small model practical on a corpus this size: 65 entries in
+the embedding table against tens of thousands for a subword vocabulary.
+
 ## Attribution
 
 The data in this repository was created by others and is redistributed

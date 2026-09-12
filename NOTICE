@@ -48,3 +48,27 @@ if you use the data, credit the creators and cite the paper.
 
 If you hold rights in this data and object to its redistribution here,
 please open an issue and it will be removed.
+
+--------------------------------------------------------------------------
+shakespeare/data/ — the "tiny Shakespeare" corpus
+--------------------------------------------------------------------------
+
+About 1.1 MB of dialogue from the plays of William Shakespeare, as one
+stream of text. The plays themselves are long out of copyright.
+
+The particular file — this selection, in this order, with speaker names
+inline — is the one distributed with Andrej Karpathy's char-rnn:
+
+    https://github.com/karpathy/char-rnn
+    data/tinyshakespeare/input.txt
+
+obtained on 2026-09-12, redistributed unmodified. char-rnn is MIT
+licensed. SHA-256 of the uncompressed text:
+
+    86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed
+
+It has been the standard toy corpus for character-level language models
+since 2015, which is the reason to use it here: a reader can compare
+what our model produces against a decade of published samples from the
+same text.
+
