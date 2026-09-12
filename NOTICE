@@ -1,0 +1,50 @@
+NOTICE
+======
+
+This module redistributes datasets created by others. The MIT licence in
+LICENSE covers the Go code in this repository only. It does not cover the
+data files, which keep the terms and the attribution of their sources as
+set out below.
+
+--------------------------------------------------------------------------
+mnist/data/ — the MNIST database of handwritten digits
+--------------------------------------------------------------------------
+
+Created by:
+
+    Yann LeCun        Courant Institute, New York University
+    Corinna Cortes    Google Labs, New York
+    Christopher J. C. Burges   Microsoft Research, Redmond
+
+Original distribution page: http://yann.lecun.com/exdb/mnist/
+
+The four files are redistributed unmodified and byte for byte:
+
+    train-images-idx3-ubyte.gz   MD5 f68b3c2dcbeaaa9fbdd348bbdeb94873
+    train-labels-idx1-ubyte.gz   MD5 d53e105ee54ea40749a09fcbcd1e9432
+    t10k-images-idx3-ubyte.gz    MD5 9fb629c4189551a2d022fa330f9573f3
+    t10k-labels-idx1-ubyte.gz    MD5 ec29112dd5afa0611ce80d1b7f02629c
+
+They were obtained on 2026-09-12 from the mirror at
+https://ossci-datasets.s3.amazonaws.com/mnist/ , the one the PyTorch
+project uses, because the original page has been intermittently
+unavailable for some years. The checksums above are the ones published
+with the original files and were verified after download.
+
+Please cite the paper that introduced the database:
+
+    Y. LeCun, L. Bottou, Y. Bengio and P. Haffner.
+    "Gradient-based learning applied to document recognition."
+    Proceedings of the IEEE, 86(11):2278-2324, November 1998.
+
+Terms: the original distribution page carried no explicit licence. The
+database is derived from NIST Special Databases 1 and 3, works of the
+United States Government, and it has been redistributed for over two
+decades by, among others, PyTorch/torchvision, Keras, scikit-learn and
+TensorFlow Datasets. Several registries record it as CC BY-SA 3.0; that
+designation does not come from the authors' own page, so this module does
+not assert it. What this module does assert is the attribution above:
+if you use the data, credit the creators and cite the paper.
+
+If you hold rights in this data and object to its redistribution here,
+please open an issue and it will be removed.
